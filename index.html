@@ -1,0 +1,224 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Muhammad Saad</title>
+    <meta name="description" content="High-quality portfolio website with animated interactions and bold design." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="glow"></div>
+
+    <div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+      <div class="welcome-card">
+        <img class="welcome-photo" src="profile.jpeg" alt="Muhammad Saad portrait" />
+        <p class="welcome-eyebrow">Welcome</p>
+        <h2 id="welcome-title">Muhammad Saad Portfolio</h2>
+        <p class="welcome-sub">
+          Thank you for visiting. Explore my work, process, and services.
+        </p>
+        <button class="btn primary" id="welcome-enter">Enter portfolio</button>
+      </div>
+    </div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">Muhammad Saad</span>
+      </div>
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu">Menu</button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="eyebrow">Frontend Designer · UI/UX · Interaction</p>
+          <h1>
+            I craft modern web interfaces that feel clear, bold, and easy to use.
+          </h1>
+          <p class="lead">
+            Landing pages, portfolios, and product UI. From layout to motion,
+            focused on great visual hierarchy.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Start a project</a>
+            <a class="btn ghost" href="#work">View work</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric">
+              <span class="metric-value">UI</span>
+              <span class="metric-label">Pixel precision</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">UX</span>
+              <span class="metric-label">Clear flows</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">Motion</span>
+              <span class="metric-label">Smooth feel</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-orbit"></div>
+          <div class="card">
+            <p class="card-title">Signature Stack</p>
+            <p class="card-sub">UI Design · Prototyping · Motion · Branding</p>
+            <div class="card-grid">
+              <div class="chip">Research</div>
+              <div class="chip">Wireframes</div>
+              <div class="chip">UI Design</div>
+              <div class="chip">Prototypes</div>
+              <div class="chip">Branding</div>
+              <div class="chip">Handoff</div>
+            </div>
+          </div>
+          <div class="card-float">
+            <p>Available for select projects</p>
+            <button class="btn small">Book a call</button>
+          </div>
+          <img class="profile-photo" src="profile.jpeg" alt="Muhammad Saad portrait" />
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Tools">
+        <div class="marquee-track">
+          <span>Creative Direction</span>
+          <span>Experience Design</span>
+          <span>Frontend Engineering</span>
+          <span>Motion Design</span>
+          <span>Brand Systems</span>
+          <span>Performance</span>
+          <span>Accessibility</span>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-header">
+          <h2>Selected Work</h2>
+          <p>Clean layouts, consistent systems, and purposeful motion.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-thumb gradient-1"></div>
+            <div class="work-info">
+              <h3>Pulse Labs</h3>
+              <p>Hero-led landing page with a clear conversion path.</p>
+              <span class="tag">UI + UX</span>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-thumb gradient-2"></div>
+            <div class="work-info">
+              <h3>Northwind Studio</h3>
+              <p>Portfolio redesign focused on typography and balance.</p>
+              <span class="tag">Brand + UI</span>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-thumb gradient-3"></div>
+            <div class="work-info">
+              <h3>Atlas Mobility</h3>
+              <p>Product page with modular sections and motion cues.</p>
+              <span class="tag">UI + Motion</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>Frontend designer focused on elegant, usable interfaces.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I help brands communicate clearly through clean layouts, thoughtful
+              spacing, and consistent UI systems. I focus on experiences that
+              feel premium and easy to navigate.
+            </p>
+            <p>
+              My process includes discovery, wireframes, high-fidelity UI, and
+              interactive prototypes ready for handoff.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span>Remote</span>
+              <strong>Global</strong>
+            </div>
+            <div class="stat">
+              <span>Timezone</span>
+              <strong>Flexible</strong>
+            </div>
+            <div class="stat">
+              <span>Focus</span>
+              <strong>Frontend Design</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>Design services that turn ideas into polished web interfaces.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service">
+            <h3>UX + Wireframes</h3>
+            <p>User flows, structure, and content layout.</p>
+          </div>
+          <div class="service">
+            <h3>UI + Motion</h3>
+            <p>High-fidelity screens and smooth interactions.</p>
+          </div>
+          <div class="service">
+            <h3>Design Systems</h3>
+            <p>Reusable components and consistent visual rules.</p>
+          </div>
+          <div class="service">
+            <h3>Prototype Handoff</h3>
+            <p>Clickable prototypes and clean documentation.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card">
+          <div>
+            <h2>Ready to build something remarkable?</h2>
+            <p>Send a quick brief and I’ll reply soon.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:muhammadsaad16202@gmail.com">Email me</a>
+            <button class="btn ghost" id="copy-email">Copy email</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Muhammad Saad. Crafted with intent.</p>
+      <div class="social">
+        <a href="#">Behance</a>
+        <a href="#">Dribbble</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
