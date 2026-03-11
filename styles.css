@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #0b0d12;
   --bg-2: #111623;
   --accent: #ff6b3d;
@@ -393,7 +393,7 @@ main {
   gap: 22px;
 }
 
-.work-card {
+.work-card {`n  display: block;`n  color: inherit;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
@@ -408,6 +408,11 @@ main {
 
 .work-thumb {
   height: 180px;
+}
+.image-top-trading {
+  background-image: url("top-trading.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .gradient-1 {
@@ -634,3 +639,5 @@ main {
     align-items: stretch;
   }
 }
+
+
