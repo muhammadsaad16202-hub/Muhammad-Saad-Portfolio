@@ -135,6 +135,16 @@ a {
   letter-spacing: 0.5px;
 }
 
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+
 .brand-mark {
   color: var(--accent-2);
   font-size: 18px;
@@ -389,11 +399,18 @@ main {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 22px;
+  justify-items: start;
 }
 
-.work-card {`n  display: block;`n  color: inherit;
+.work-card {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  max-width: 260px;
+  margin-inline: 0;
+  color: inherit;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
@@ -407,10 +424,11 @@ main {
 }
 
 .work-thumb {
-  height: 180px;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 .image-top-trading {
-  background-image: url("top-trading.png");
+  background-image: url("top-trading.jpeg");
   background-size: cover;
   background-position: center;
 }
