@@ -432,6 +432,11 @@ main {
   background-size: cover;
   background-position: center;
 }
+.image-card-one {
+  background-image: url("card1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
 
 .gradient-1 {
   background: linear-gradient(120deg, #1fa2ff, #12d8fa, #a6ffcb);
